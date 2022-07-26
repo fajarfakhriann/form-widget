@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Chat box</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <input type="checkbox" id="click">
+    <label for="click">
+      Here the magic begins
+      </label>
+    <div class="wrapper">
+        <div class="head">
+            <img src="/logo.png" alt="">
+        </div>
+        <div class="chat-box">
+            <div class="desc-text">
+                here you can add a caption
+            </div>
+            <div>
+
+                <div class="contact">
+                    <p>general support</p>
+                    <img src="/cs.png" alt="">
+                    <a href="/chat.html">Anakin</a>
+                    <p>online
+                        <p>
+                </div>
+                <div>
+                    <img src="" alt="">
+                </div>
+                <div class="contact">
+                    <p>marketing</p>
+                    <img src="/cs.png" alt="">
+
+                    <a href="/chat.html">Amidala</a>
+                    <p>online</p>
+
+                </div>
+                <div>
+                    <img src="" alt="">
+                </div>
+                <div class="contact">
+                    <p>general question</p>
+                    <img src="/cs.png" alt="">
+
+                    <a href="/chat.html">C3PO</a>
+                    <p>online</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('#fill_identity').on('submit', function(e) {
+                e.preventDefault();
+                $(this).hide();
+                $('#chat_container').show()
+            });
+        });
+    </script>
+</body>
+
+</html>
